@@ -1,10 +1,16 @@
 package app.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Timer {
+    private long startTime;
 
-    private Long nanoTime = System.nanoTime();
+    public Timer() {
+        this.startTime = System.currentTimeMillis(); // Инициализируем время запуска
+    }
 
-    public Long getTime() {
-        return nanoTime;
+    public long getElapsedTime() {
+        return System.currentTimeMillis() - startTime; // Возвращаем прошедшее время
     }
 }

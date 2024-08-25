@@ -27,5 +27,6 @@ public class AnimalsCage {
 
     public long getElapsedTime() {
         return timer.getElapsedTime();
+
     }
 }

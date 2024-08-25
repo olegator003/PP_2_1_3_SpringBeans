@@ -11,6 +11,6 @@ public class Timer {
     }
 
     public long getElapsedTime() {
-        return System.currentTimeMillis() - startTime; // Возвращаем прошедшее время
+        return System.currentTimeMillis() - startTime;  // Возвращаем прошедшее время
     }
 }

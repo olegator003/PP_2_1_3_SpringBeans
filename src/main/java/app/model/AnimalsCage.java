@@ -16,11 +16,16 @@ public class AnimalsCage {
         this.timer = timer;
     }
 
+
     public void whatAnimalSay() {
         System.out.println("Say:");
         animal.makeSound();
         System.out.println("At:");
         System.out.println(timer.getElapsedTime());
         System.out.println("________________________");
+    }
+
+    public long getElapsedTime() {
+        return timer.getElapsedTime();
     }
 }

@@ -25,7 +25,7 @@ public class MainTest {
                 time = bean.getElapsedTime();
                 continue;
             }
-            Assert.assertEquals("Тест провален, не корректная реализация бинов.", time, bean.getElapsedTime().getTime().longValue());
+            Assert.assertEquals("Тест провален, не корректная реализация бинов.", time, bean.getElapsedTime());
             System.out.println(time);
         }
     }
